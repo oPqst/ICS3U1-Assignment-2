@@ -1,33 +1,156 @@
-*{
-    margin:0px
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: blue;
+  height:100%;
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+/* General Navbar styling */
+.navbar {
+  background-color: #1c1c1c;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(15, 26, 109);
+}
+
+/* Logo Styling */
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* SIGN UP button styling */
+.SUbutton {
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgb(15, 26, 109);
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 30px;
+}
+
+.SUbutton:hover {
+  background-color: rgb(15, 26, 109);
+}
+
+
+
+.hero {
+  background: url('hero.jpg') no-repeat center center / cover;
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.518);
+  z-index: 1;
+}
+
+.content {
+  max-width: 60%;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+
+.content p {
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(15, 26, 109);
+}
+
+.content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+
+strong {
+  color: rgb(15, 26, 109);
+}
+
+
+.watch-btn {
+  margin-top: 2rem; 
+  border: 2px solid rgb(15, 26, 109);
+  color: #fff;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.watch-btn:hover {
+  background-color: rgb(15, 26, 109);
+
+}
+
+
+.feature-heading {
+  color: white;
+  background: url('space\ background.jpg') no-repeat center center / cover;
+
+  text-align: center;
+  padding: 15px;
+}
+
+.movie-container {
+  background: url('space\ background.jpg') no-repeat center center / cover;
+
+  display: flex; /* Enables Flexbox layout for the movie items */
+  justify-content: space-between; /* Space between the movie items */
+  align-items: stretch; /* Makes all movie items the same height */
+}
+
+
+.moviebanners img {
+  width: 100%; /* Make the image fill the width of the banner */
+  height: 100%; /* Make the image fill the height of the banner */
+  height: 500px; /* Set a fixed height for the movie banners */
+
+  object-fit: cover; /* Ensure the images fill the dimensions without distortion */
+}
+
+.movie-description {
+  padding:20px;
+  color:white;
+  text-align: center;
+}
