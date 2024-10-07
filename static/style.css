@@ -12,13 +12,13 @@ html {
 }
 
 
-/* General Navbar styling */
 .navbar {
   background-color: #1c1c1c;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navbar ul {
@@ -44,13 +44,11 @@ html {
   color: rgb(15, 26, 109);
 }
 
-/* Logo Styling */
 .logo {
   width: 50px;
   height: auto;
 }
 
-/* SIGN UP button styling */
 .SUbutton {
   background-color: transparent;
   color: white;
@@ -68,7 +66,7 @@ html {
 
 
 .hero {
-  background: url('hero.jpg') no-repeat center center / cover;
+  background: url('hero.jpg');
   position: relative;
   height: 90vh;
   display: flex;
@@ -119,7 +117,6 @@ strong {
   padding: 10px 20px;
   background-color: transparent;
   border-radius: 20px;
-  cursor: pointer;
 }
 
 .watch-btn:hover {
@@ -130,27 +127,24 @@ strong {
 
 .feature-heading {
   color: white;
-  background: url('space\ background.jpg') no-repeat center center / cover;
-
+  background: url('space\ background.jpg');
   text-align: center;
   padding: 15px;
 }
 
 .movie-container {
-  background: url('space\ background.jpg') no-repeat center center / cover;
-
-  display: flex; /* Enables Flexbox layout for the movie items */
-  justify-content: space-between; /* Space between the movie items */
-  align-items: stretch; /* Makes all movie items the same height */
+  background: url('space\ background.jpg');
+  display: flex; 
+  justify-content: space-between; 
+  align-items: stretch; 
 }
 
 
 .moviebanners img {
-  width: 100%; /* Make the image fill the width of the banner */
-  height: 100%; /* Make the image fill the height of the banner */
-  height: 500px; /* Set a fixed height for the movie banners */
+  width: 100%; 
+  height: 100%; 
+  height: 500px; 
   border-radius: 20px;
-  object-fit: cover; /* Ensure the images fill the dimensions without distortion */
 }
 
 .movie-description {
