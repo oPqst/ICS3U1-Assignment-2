@@ -66,25 +66,15 @@ html {
 
 
 .hero {
-  background: url('hero.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.5)), url(hero.jpg);
   position: relative;
   height: 90vh;
+  background-size: cover;
   display: flex;
   align-items: center;
   padding: 0 30px;
-  overflow: hidden;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.518);
-  z-index: 1;
-}
 
 .content {
   max-width: 60%;
@@ -127,13 +117,13 @@ strong {
 
 .feature-heading {
   color: white;
-  background: url('space\ background.jpg');
+  background-color: black;
   text-align: center;
   padding: 15px;
 }
 
 .movie-container {
-  background: url('space\ background.jpg');
+  background-color: black;
   display: flex; 
   justify-content: space-between; 
   align-items: stretch; 
@@ -142,10 +132,10 @@ strong {
 
 .moviebanners img {
   width: 100%; 
-  height: 100%; 
   height: 500px; 
   border-radius: 20px;
 }
+
 
 .movie-description {
   padding:20px;
