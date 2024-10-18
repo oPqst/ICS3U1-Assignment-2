@@ -57,16 +57,18 @@ html {
   font-size: 16px;
   transition: all 0.3s ease;
   border-radius: 30px;
+  transform: 0.4s;
 }
 
 .SUbutton:hover {
   background-color: rgb(15, 26, 109);
+  transform: scale(1.2);
 }
 
 
 
 .hero {
-  background: url('hero.jpg');
+  background: url('hero.jpg') no-repeat center center / cover;
   position: relative;
   height: 90vh;
   display: flex;
@@ -110,18 +112,29 @@ strong {
 }
 
 
+
+
+
+
+
+
+
 .watch-btn {
   margin-top: 2rem; 
   border: 2px solid rgb(15, 26, 109);
   color: #fff;
-  padding: 10px 20px;
+  font-size: 16px;
+  padding: 15px 40px;
+  font-weight: bold;
   background-color: transparent;
   border-radius: 20px;
+  transition: 0.4s;
+
 }
 
 .watch-btn:hover {
   background-color: rgb(15, 26, 109);
-
+  transform: scale(1.2);
 }
 
 
