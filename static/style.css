@@ -68,8 +68,7 @@ html {
 
 
 .hero {
-  background: url('hero.jpg') no-repeat center center / cover;
-  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.5)), url(hero.jpg);  position: relative;
   height: 90vh;
   background-size: cover;
   display: flex;
