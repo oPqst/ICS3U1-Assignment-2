@@ -149,6 +149,8 @@ strong {
   height: 100%;
   overflow: hidden;
   transition: transform 0.3s;
+  border: 3px solid #ffc1078d;
+
 }
 
 
@@ -166,6 +168,7 @@ strong {
   height: 500px;
   transition: transform 0.3s;
   transition: filter 0.4s ease;
+  
 }
 
 .movie-item:hover {
