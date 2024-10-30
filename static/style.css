@@ -4,11 +4,9 @@
 }
 
 body {
-  height:100%;
-}
-
-html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
 }
 
 
@@ -18,7 +16,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .navbar ul {
@@ -31,55 +29,67 @@ html {
 
 .navbar li {
   margin: 0 20px;
+  font-weight: bold;
+
+
 }
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: #B0B0B0;
   font-size: 16px;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: rgb(15, 26, 109);
+  color: #FFD700;
 }
 
 .logo {
-  width: 50px;
+  width: 150px;
   height: auto;
 }
 
 .SUbutton {
   background-color: transparent;
   color: white;
-  border: 2px solid rgb(15, 26, 109);
+  border: 2px solid #E6B800;
   padding: 10px 20px;
   font-size: 16px;
+  font-weight: bold;
   transition: all 0.3s ease;
   border-radius: 30px;
   transform: 0.4s;
+
 }
 
 .SUbutton:hover {
-  background-color: rgb(15, 26, 109);
+  background: #E6B800;
+  font-weight: bold;
   transform: scale(1.2);
 }
 
 
 
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.5)), url(hero.jpg);  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.5)), url(hero.jpg);
+  position: relative;
   height: 90vh;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
-  align-items: center;
   padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
 }
 
 
 .content {
   max-width: 60%;
-  color: #fff;
+  color: white;
+  text-shadow: (0, 0, 0, 0.5);
   position: relative;
   z-index: 2;
 }
@@ -88,7 +98,7 @@ html {
 .content p {
   font-size: 40px;
   font-weight: 700;
-  color: rgb(15, 26, 109);
+  color: #E6B800;
 }
 
 .content h1 {
@@ -97,20 +107,17 @@ html {
 }
 
 strong {
-  color: rgb(15, 26, 109);
+  color: #E6B800;
+  font-weight: 800;
 }
 
 
 
 
 
-
-
-
-
 .watch-btn {
-  margin-top: 2rem; 
-  border: 2px solid rgb(15, 26, 109);
+  margin-top: 2rem;
+  border: 2px solid #E6B800;
   color: #fff;
   font-size: 16px;
   padding: 15px 40px;
@@ -122,35 +129,101 @@ strong {
 }
 
 .watch-btn:hover {
-  background-color: rgb(15, 26, 109);
+  background: #E6B800;
   transform: scale(1.2);
 }
 
 
 .feature-heading {
   color: white;
-  background-color: black;
+  background: linear-gradient(to bottom, #1a1a1a, black);
   text-align: center;
-  padding: 15px;
+  padding: 30px;
 }
 
+
+.movie-item {
+  margin: 15px;
+  border-radius: 20px;
+  width: 30%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+
+
 .movie-container {
-  background-color: black;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: stretch; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 
 .moviebanners img {
-  width: 100%; 
-  height: 500px; 
-  border-radius: 20px;
+  width: 100%;
+  height: 500px;
+  transition: transform 0.3s;
+  transition: filter 0.4s ease;
 }
 
+.movie-item:hover {
+  transform: scale(1.03);
+}
+
+.moviebanners img:hover {
+  filter: brightness(50%);
+
+}
 
 .movie-description {
-  padding:20px;
-  color:white;
+  padding: 20px;
+  color: white;
+  background-color: rgba(28, 20, 20, 0.731);
   text-align: center;
 }
+
+
+
+
+
+
+
+
+.trailer {
+  display: inline-block;
+  background: #ffcc00;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.trailer:hover {
+  background: #ffc107;
+  color: white;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: white;    
+  text-align: center;       
+  padding: 15px 0;          
+  position: relative; 
+  width: 100%;              
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none; 
+  transition: color 0.3s; 
+}
+
+footer a:hover {
+  color: #E6B800;
+}
+
+
