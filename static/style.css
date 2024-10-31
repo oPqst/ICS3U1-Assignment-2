@@ -12,6 +12,7 @@ body {
 
 .navbar {
   background-color: #1c1c1c;
+  font-family: 'Roboto', sans-serif;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -21,24 +22,20 @@ body {
 
 .navbar ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   align-items: center;
 }
 
 .navbar li {
-  margin: 0 20px;
+  margin: 0 10px;
   font-weight: bold;
-
-
 }
 
 .navbar a {
   text-decoration: none;
   color: #B0B0B0;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition:0.3s;
 }
 
 .navbar a:hover {
@@ -50,54 +47,44 @@ body {
   height: auto;
 }
 
-.SUbutton {
+.su-button {
   background-color: transparent;
   color: white;
   border: 2px solid #E6B800;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: 0.3s;
   border-radius: 30px;
   transform: 0.4s;
-
 }
 
-.SUbutton:hover {
+.su-button:hover {
   background: #E6B800;
   font-weight: bold;
   transform: scale(1.2);
 }
 
-
-
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.384), rgba(0, 0, 0, 0.5)), url(hero.jpg);
-  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(hero.jpg);
   height: 90vh;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  padding: 0 30px;
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
-
 
 .content {
   max-width: 60%;
   color: white;
-  text-shadow: (0, 0, 0, 0.5);
   position: relative;
-  z-index: 2;
 }
-
 
 .content p {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 900;
   color: #E6B800;
 }
 
@@ -111,10 +98,6 @@ strong {
   font-weight: 800;
 }
 
-
-
-
-
 .watch-btn {
   margin-top: 2rem;
   border: 2px solid #E6B800;
@@ -125,7 +108,6 @@ strong {
   background-color: transparent;
   border-radius: 20px;
   transition: 0.4s;
-
 }
 
 .watch-btn:hover {
@@ -133,14 +115,13 @@ strong {
   transform: scale(1.2);
 }
 
-
 .feature-heading {
+  font-family: 'Monoton', cursive;
   color: white;
-  background: linear-gradient(to bottom, #1a1a1a, black);
+  background: linear-gradient(to bottom, #323232, rgba(0, 0, 0, 0.639));
   text-align: center;
   padding: 30px;
 }
-
 
 .movie-item {
   margin: 15px;
@@ -148,12 +129,9 @@ strong {
   width: 30%;
   height: 100%;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition:0.3s;
   border: 3px solid #ffc1078d;
-
 }
-
-
 
 .movie-container {
   display: flex;
@@ -162,37 +140,27 @@ strong {
   padding: 20px;
 }
 
-
-.moviebanners img {
+.movie-banners img {
   width: 100%;
   height: 500px;
-  transition: transform 0.3s;
-  transition: filter 0.4s ease;
-  
+  transition: 0.3s;
 }
 
 .movie-item:hover {
   transform: scale(1.03);
 }
 
-.moviebanners img:hover {
+.movie-banners img:hover {
   filter: brightness(50%);
-
 }
 
 .movie-description {
+  font-family: 'Oswald', sans-serif;
   padding: 20px;
   color: white;
   background-color: rgba(28, 20, 20, 0.731);
   text-align: center;
 }
-
-
-
-
-
-
-
 
 .trailer {
   display: inline-block;
@@ -202,7 +170,7 @@ strong {
   border-radius: 5px;
   text-decoration: none;
   margin-top: 10px;
-  transition: background 0.3s ease, color 0.3s ease;
+  transition:0.3s;
 }
 
 .trailer:hover {
@@ -212,21 +180,20 @@ strong {
 
 footer {
   background-color: #1c1c1c;
-  color: white;    
-  text-align: center;       
-  padding: 15px 0;          
-  position: relative; 
-  width: 100%;              
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 footer a {
   color: #FFD700;
-  text-decoration: none; 
-  transition: color 0.3s; 
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 footer a:hover {
   color: #E6B800;
 }
-
-
